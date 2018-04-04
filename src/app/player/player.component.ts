@@ -11,6 +11,10 @@ import {Component, Input, OnInit} from '@angular/core';
 export class PlayerComponent implements OnInit {
   @Input() name: string;
   @Input() color: string;
+  @Input() xPos: string;
+  @Input() yPos: string;
+
+  position = { "x": this.xPos, "y": this.yPos };
   constructor() { }
 
   ngOnInit() {

@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MazeComponent } from './maze/maze.component';
 import {PlayerComponent} from './player/player.component';
+import {AngularDraggableModule} from 'angular2-draggable';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import {PlayerComponent} from './player/player.component';
     PlayerComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AngularDraggableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

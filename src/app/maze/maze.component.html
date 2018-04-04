@@ -9,13 +9,13 @@
 <div class="game">
   <div class="players">
     <div  *ngFor="let player of players" >
-      <app-player (click)="startPlaying(player)" [color]="player.color" [name]="player.name"></app-player>
+      <app-player (click)="startPlaying(player)" [color]="player.color" [name]="player.name" [xPos]="player.xPos" [yPos]="player.yPos"></app-player>
     </div>
   </div>
   <div class="board1">
     <!--<img width="300" src="https://lh4.googleusercontent.com/qnZA6xrD6aTd2SIA_8Jqmqwp9iYG_K0JVsp6GYOvIyk12WhmvawAF5hQwYAlkHvBMug846D06wx71g=w1307-h622-rw" alt="The maze Pic">-->
     <div  *ngFor="let player of playing" >
-      <app-player [id]=player.name class="beginPos" [color]="player.color" [name]="player.name"></app-player>
+      <app-player [id]=player.name class="beginPos" [color]="player.color" [name]="player.name" [xPos]="50" [yPos]="50"></app-player>
     </div>
 
   </div>

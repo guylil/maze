@@ -40,7 +40,7 @@ export class MazeComponent implements OnInit {
     console.log('makeDraggable');
 
   }
-  
+
 }
 
 
