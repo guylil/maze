@@ -1,0 +1,33 @@
+.board {
+  background-image: url("https://lh4.googleusercontent.com/qnZA6xrD6aTd2SIA_8Jqmqwp9iYG_K0JVsp6GYOvIyk12WhmvawAF5hQwYAlkHvBMug846D06wx71g=w1307-h622-rw");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-width: 300px;
+  min-height: 400px;
+}
+
+.players {
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.beginPos {
+  padding: 1px;
+  margin: 19px;
+  background-color: red;
+  cursor: move;
+}
+
+.board1 {
+  position: absolute;
+  background-image: url("https://lh4.googleusercontent.com/qnZA6xrD6aTd2SIA_8Jqmqwp9iYG_K0JVsp6GYOvIyk12WhmvawAF5hQwYAlkHvBMug846D06wx71g=w1307-h622-rw");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: lightblue;
+  height: 300px;
+  width: 300px;
+}
+

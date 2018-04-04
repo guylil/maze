@@ -1,0 +1,39 @@
+<div>
+  <!--<img width="300" src="https://lh4.googleusercontent.com/qnZA6xrD6aTd2SIA_8Jqmqwp9iYG_K0JVsp6GYOvIyk12WhmvawAF5hQwYAlkHvBMug846D06wx71g=w1307-h622-rw" alt="The maze Pic">-->
+</div>
+
+<button (click)="addPlayer('p2')">Add new Player</button>
+<button>Start Game</button>
+<button>End Game</button>
+
+<div class="game">
+  <div class="players">
+    <div  *ngFor="let player of players" >
+      <app-player (click)="startPlaying(player)" [color]="player.color" [name]="player.name"></app-player>
+    </div>
+  </div>
+  <div class="board1">
+    <!--<img width="300" src="https://lh4.googleusercontent.com/qnZA6xrD6aTd2SIA_8Jqmqwp9iYG_K0JVsp6GYOvIyk12WhmvawAF5hQwYAlkHvBMug846D06wx71g=w1307-h622-rw" alt="The maze Pic">-->
+    <div  *ngFor="let player of playing" >
+      <app-player [id]=player.name class="beginPos" [color]="player.color" [name]="player.name"></app-player>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div class="maze">
+  <div class="players">
+    <!--<div  *ngFor="let player of players" >-->
+      <!--{{player.name}} {{player.color}}-->
+      <!--<app-player (click)="startPlaying(player)" [color]="player.color" [name]="player.name"></app-player>-->
+    <!--</div>-->
+  </div>
+  <!--<div class="board">-->
+    <!--<div class="beginPos" *ngFor="let player of playing" >-->
+      <!--<app-player [color]="player.color" [name]="player.name"></app-player>-->
+    <!--</div>-->
+  <!--</div>-->
+</div>
